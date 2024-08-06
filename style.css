@@ -148,6 +148,11 @@
     height:90vh;
     opacity:95%;
     position:relative;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
 }
 .cafeteria h2 {
     position:absolute;
@@ -224,59 +229,64 @@
     border-radius:6px;
 }
 
-@media (max-width:768px) {
-    .container {
-        padding:60px 20px;
-    }
+@media (max-width: 768px) {
+.topo {
+    flex-direction:column;
+    align-items:flex-start;
+    height:auto;
+    padding:10px 20px;
+}
 
-    .container-titulo-topo, .container-lista, .galeria, .img-marcas, .onde-estamos iframe {
-        max-width:100%;
-        width:auto;
-    }
+.topo img {
+    margin-bottom:10px;
+}
 
-    h1 {
-        font-size:36px;
-    }
+.nav {
+    flex-direction:column;
+    align-items:flex-start;
+}
 
-    .link-ws {
-        width:100%;
-        font-size:16px;
-    }
+.nav a {
+    margin:5px 0;
+}
 
-    h3 {
-        font-size:28px;
-    }
+.background1 h1 {
+    font-size:36px;
+    padding:0 10px;
+}
 
-    ul li {
-        font-size:16px;
-    }
+.texto {
+    margin:40px 20px;
+}
 
-    .secao-faixa p {
-        font-size:24px;
-        margin-bottom:20px;
-    }
+.background2 p, .background3 p {
+    font-size:20px;
+    padding:10px;
+}
 
-    .secao-faixa img {
-        width:40px;
-        height:40px;
-    }
+.background4 iframe {
+    height:200px;
+}
 
-    .logo {
-        width:100px;
-        height:100px;
-        margin:10px;
-    }
+.background4 h4, .background4 .contato-lista {
+    width:100%;
+}
 
-    .onde-estamos p {
-        font-size:18px;
-    }
+.cafeteria h2 {
+    font-size:28px;
+}
 
-    .onde-estamos iframe {
-        width:100%;
-        height:auto;
-    }
+.horarios-lista {
+    font-size:18px;
+}
 
-    .rodape p {
-        font-size:10px;
-    }
+.horarios-lista li {
+    height:auto;
+    flex-direction:column;
+    align-items:flex-start;
+}
+
+.horarios-lista li div {
+    display:none;
+}
 }
